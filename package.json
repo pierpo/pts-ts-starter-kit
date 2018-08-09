@@ -1,0 +1,31 @@
+{
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack-dev-server",
+    "pretest": "yarn lint && tsc --project .",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "deploy": "yarn build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "pts": "0.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "10.5.2",
+    "awesome-typescript-loader": "5.2.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.2.0",
+    "clean-webpack-plugin": "0.1.19",
+    "copy-webpack-plugin": "4.5.1",
+    "gh-pages": "1.2.0",
+    "html-webpack-plugin": "3.2.0",
+    "jest": "23.3.0",
+    "source-map-loader": "^0.2.3",
+    "ts-jest": "23.0.0",
+    "tslint": "5.11.0",
+    "tslint-eslint-rules": "5.3.1",
+    "typescript": "3.0.1",
+    "webpack": "4.10.2",
+    "webpack-cli": "3.0.2",
+    "webpack-dev-server": "3.1.4"
+  }
+}
