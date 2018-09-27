@@ -7,7 +7,7 @@
     "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
-    "pts": "0.5.0"
+    "pts": "0.6.2"
   },
   "devDependencies": {
     "@types/node": "10.5.2",

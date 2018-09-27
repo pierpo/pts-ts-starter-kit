@@ -11,7 +11,7 @@ module.exports = {
   module: {
     rules: [
       { test: /\.tsx?$/, loader: 'awesome-typescript-loader' },
-      { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
+      { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader', exclude: path.join(process.cwd(), 'node_modules/pts') },
     ],
   },
   plugins: [
