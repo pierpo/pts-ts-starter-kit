@@ -2,17 +2,17 @@
 // Source code licensed under Apache License 2.0.
 // Copyright © 2017 William Ngan. (https://github.com/williamngan/pts)
 
-import {CanvasSpace, Create, Polygon} from 'pts';
+import {CanvasSpace, Create, Group, Polygon} from 'pts';
 
 // Initiate Space and Form
 const space = new CanvasSpace('#pts').setup({bgcolor: '#09F', resize: true, retina: true});
 const form = space.getForm();
 
-let landmarks;
+let landmarks : Group;
 
 space.add({
 
-  start: bound => {
+  start: () => {
     // Make a face with 30 radial points with slight randomness
     const radius = space.size.minValue().value / 3;
     landmarks = Create.radialPts( space.center, radius, 30  );
@@ -20,7 +20,7 @@ space.add({
 
   },
 
-  animate: (time, ftime) => {
+  animate: () => {
 
     landmarks[landmarks.length - 1] = space.pointer;
 
