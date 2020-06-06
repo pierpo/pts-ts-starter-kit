@@ -7,25 +7,25 @@
     "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
-    "pts": "0.6.2"
+    "pts": "^0.9.1"
   },
   "devDependencies": {
-    "@types/node": "10.5.2",
-    "awesome-typescript-loader": "5.2.0",
+    "@types/node": "14.0.11",
+    "awesome-typescript-loader": "5.2.1",
     "babel-core": "^6.26.3",
-    "babel-jest": "^23.2.0",
-    "clean-webpack-plugin": "0.1.19",
-    "copy-webpack-plugin": "4.5.1",
-    "gh-pages": "1.2.0",
-    "html-webpack-plugin": "3.2.0",
-    "jest": "23.3.0",
-    "source-map-loader": "^0.2.3",
-    "ts-jest": "23.0.0",
-    "tslint": "5.11.0",
-    "tslint-eslint-rules": "5.3.1",
-    "typescript": "3.0.1",
-    "webpack": "4.10.2",
-    "webpack-cli": "3.0.2",
-    "webpack-dev-server": "3.1.4"
+    "babel-jest": "^26.0.1",
+    "clean-webpack-plugin": "3.0.0",
+    "copy-webpack-plugin": "6.0.2",
+    "gh-pages": "3.0.0",
+    "html-webpack-plugin": "4.3.0",
+    "jest": "^26.0.1",
+    "source-map-loader": "1.0.0",
+    "ts-jest": "^26.0.1",
+    "tslint": "6.1.2",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "3.9.5",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.11.0"
   }
 }
